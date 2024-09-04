@@ -8,14 +8,19 @@ body {
 
 #header {
     display: flex;
-    justify-content: flex-end;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
     padding: 10px;
-    
+}
+
+.nav {
+
 }
 
 .pagecontainer {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
 }
 
 .about_container {
@@ -38,19 +43,18 @@ body {
     
     font-size: 3rem;
     display: flex;
-flex-wrap: wrap;
-    blo
+    flex-wrap: wrap;
 }
-
+.about {
+    display: flex;
+    justify-content: ;
+}
 #Contact {
     display: flex; 
+    flex-direction: column;
     justify-content: center;
-    flex: 1;
-
-    
 }
 
-}
 .icons img {
     display: inline-block;
     float: right;
@@ -58,3 +62,4 @@ flex-wrap: wrap;
     height: auto;
     padding-right: 5;
 }
+
