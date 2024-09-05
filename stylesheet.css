@@ -1,65 +1,199 @@
-* {
-    
-    background-color: F3F8FF;
-}
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: #00000000;
 }
 
-#header {
+.navbar {
     display: flex;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    font-weight: lighter;
+    top: 0; 
+    width: 100%;
+    height: 7.5%;
+    margin: 0;
+    font-size: 1.2rem;
+    background-image: linear-gradient(#efefef, #ffffff, #efefef);
+    opacity: 0.9;
+  }
+.nameheader{
+    background: hidden;
+}
+.nav-wrapper {
+    display: inline flex;
+    justify-content: right;
+    position: fixed;
+
+    width: 100%;
+    margin-top: 0.5%;
+    margin-right: ;
+    font-size: 2rem;
+    opacity: 0.9;
+
+    }
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+
+.navbar a:hover {
+    background: #ffffff;
+    color: black;
+    opacity: 9;
+}
+h1 {
+    font-size: 40pt;
 }
 
-.nav {
 
-}
-
-.pagecontainer {
-    height: 100vh;
-}
-
-.about_container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#Portfolio {
-   
-
-}
-.projectflex {
-    display: flex
-    justify-content:  
-
-
-}
-
-.chris {
-    
-    font-size: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-.about {
-    display: flex;
-    justify-content: ;
-}
-#Contact {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-}
-
-.icons img {
+.icon img{
     display: inline-block;
-    float: right;
-    width: 50px;
-    height: auto;
-    padding-right: 5;
+    width: autopx;
+    height: 20px;
+}
+.widthdiv {
+    width: 0%;
+    background-color: #000000;
+}
+.myname{
+    display: inline-block;
+
 }
 
+.myname{
+    margin-left: 12.5%;
+    font-weight: lighter;
+    
+}
+
+
+
+.hero {
+    height: 100%;
+
+}
+.workcontainer {
+    display: flex;
+    background-image: linear-gradient(#ffffff, #fbf9f9, #ffffff);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin-bottom: 5%;
+    margin-inline: 10%;
+    margin-top: 7.5%;
+    width: ;
+}
+
+@media screen and (max-width: 850px) {
+    .workcontainer{
+        border: 10px solid red;
+        margin-top: 20%;
+        width: 80%;
+    }
+        
+}
+
+    
+    
+.container {
+    display: flex;
+    background-image: linear-gradient(#ffffff, #fbf9f9, #ffffff);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin-bottom: 5%;
+    margin-inline: 0%;
+    margin-top: 5%;
+
+    }
+
+
+
+.cvflex{
+    display: flex;
+    flex-direction:column;
+    align-items: stretch;
+    margin-bottom: 5%;
+    margin-inline: 10%;
+    margin-top: 7.5%;
+
+}
+
+.cvwrap{
+    margin: 2.5%;
+
+
+
+}
+
+
+#work{
+    width: 90%;
+    
+    
+
+}
+.projectdiv img{
+    width: 29pc;
+    height: 25pc;
+    box-shadow: 0 5px 5px -5px #000500;
+    filter: drop-shadow(16px 16px 20px rgb(178, 167, 167)) invert(10%);
+    filter: grayscale(20%);
+}
+.CVcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.CVbio {
+    font-size: ;
+
+}
+.CVdiv{
+    margin: 10%;
+
+}
+
+#CV {
+
+    
+
+}
+
+#Contact {
+
+}
+.contactcontainer{
+    display: flex;
+    padding-top: 134.4px;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center ;
+    padding: 50px;
+
+}
+.contactfoot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    background-image: linear-gradient(#000000, #484747, #000000);
+    opacity: 0.9;;
+    padding: 10%;
+
+}
+.contactfoot p {
+    margin: 0;
+    font-size: 50pt;
+}
