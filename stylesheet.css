@@ -49,9 +49,12 @@ body {
     opacity: 9;
 }
 h1 {
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
+h3 {
+    font-weight: lighter;
+}
 
 .icon img{
     display: inline-block;
@@ -64,16 +67,11 @@ h1 {
 }
 .myname{
     display: inline-block;
-
-}
-
-.myname{
-    margin-left: 12.5%;
+    font-size: 2rem;
+    margin-left: 10%;
     font-weight: lighter;
-    
+    margin-top: 0.75%;
 }
-
-
 
 .hero {
     height: 100%;
@@ -93,7 +91,6 @@ h1 {
 
 @media screen and (max-width: 850px) {
     .workcontainer{
-        border: 10px solid red;
         margin-top: 20%;
         width: 80%;
     }
@@ -113,9 +110,6 @@ h1 {
     margin-top: 5%;
 
     }
-
-
-
 .cvflex{
     display: flex;
     flex-direction:column;
@@ -123,20 +117,18 @@ h1 {
     margin-bottom: 5%;
     margin-inline: 10%;
     margin-top: 7.5%;
-
 }
 
 .cvwrap{
     margin: 2.5%;
-
-
-
+}
+.cvtitle{
+    border-top: 1px solid rgba(206, 206, 206, 0.882);
 }
 
 
 #work{
-    width: 90%;
-    
+
     
 
 }
@@ -152,9 +144,25 @@ h1 {
     justify-content: space-between;
     align-items: baseline;
 }
-.CVbio {
-    font-size: ;
+h2{
+    font-weight: lighter;
+}
+.cvcol1, li{
+        margin: 20px 0;
+        font-weight: lighter;
+    }
 
+.CVbio {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-top: 1px solid rgba(206, 206, 206, 0.882);
+    border-bottom: 1px solid rgba(206, 206, 206, 0.882);
+    padding-bottom: 5%;
+}
+.cvtitle {
+    border-top: 1px solid rgba(206, 206, 206, 0.882);
+}
+.cvwrap{
 }
 .CVdiv{
     margin: 10%;
@@ -162,12 +170,10 @@ h1 {
 }
 
 #CV {
-
-    
-
 }
 
 #Contact {
+    border-top: 1px solid rgba(206, 206, 206, 0.882);
 
 }
 .contactcontainer{
@@ -196,4 +202,19 @@ h1 {
 .contactfoot p {
     margin: 0;
     font-size: 50pt;
+}
+
+.cvcol2 ul{
+    padding-left: 0%;
+}
+.cvcol3 a{
+    color: #000000;
+}
+.cvcol3 a:hover {
+    background-image: linear-gradient(#efefef, #ffffff, #efefef);
+    color: black;
+    opacity: 9;
+}
+.cvsubtitle{
+    font-style: italic;
 }
