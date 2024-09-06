@@ -81,25 +81,13 @@ h3 {
 }
 .workcontainer {
     display: flex;
-    background-image: linear-gradient(#ffffff, #fbf9f9, #ffffff);
+    background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #ffffff;
     margin-bottom: 5%;
     margin-inline: 10%;
     margin-top: 7.5%;
-}
-
-.container {
-    display: flex;
-    background-image: linear-gradient(#ffffff, #fbf9f9, #ffffff);
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    margin-bottom: 5%;
-    margin-inline: 0%;
-    margin-top: 5%;
-
 }
 
 #work{
@@ -109,7 +97,7 @@ h3 {
     width: 29pc;
     height: 25pc;
     box-shadow: 0 5px 5px -5px #000500;
-    filter: drop-shadow(16px 16px 20px rgb(178, 167, 167)) invert(10%);
+    filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
 }
 .CVcontainer {
@@ -142,20 +130,28 @@ h3 {
 
 .CVbio {
     margin-top: 5%;
-    margin-bottom: 5%;
     border-top: 1px solid rgba(206, 206, 206, 0.882);
     border-bottom: 1px solid rgba(206, 206, 206, 0.882);
 }
+.CVbio h1{
+    margin-bottom: 0%;
+}
 .CVbio h2{
-    font-size: medium;
+    font-size: 28pt;
+    padding-bottom: 2.5%;
+}
+.cvbio p{
+    font-weight: lighter;
+
 }
 
 .cvtitle {
     border-top: 1px solid rgba(206, 206, 206, 0.882);
 }
-.cvtitle h1{
+.CVtitle h1{
     margin-top: 0%;
     margin-bottom: 0%;
+    padding-top: 5%;
 }
 .cvwrap{
 
@@ -163,7 +159,6 @@ h3 {
 
 .CVdiv{
     margin: 10%;
-
 }
 
 #CV {
@@ -182,6 +177,8 @@ h3 {
     flex-wrap: wrap;
     align-items:center ;
     padding: 50px;
+    background-image: linear-gradient(#ffffff, #ffffff, #00000024);
+
 
 }
 .contactfoot {
@@ -225,12 +222,14 @@ h3 {
 .cvsubtitle{
     font-style: italic;
 }
+.cvsubtitle h2{
+    margin-top: 0.5%;
+}
 
 @media screen and (max-width: 850px) {
     .workcontainer{
         margin-top: 20%;
         width: 80%;
-        background-color: red;
     }
 
         
