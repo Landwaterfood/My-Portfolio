@@ -28,7 +28,6 @@ body {
     margin-top: 0.5%;
     font-size: 2rem;
     opacity: 0.9;
-
     }
 
 .navbar a {
@@ -39,9 +38,6 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   }
-
-
-
 .navbar a:hover {
     background: #ffffff;
     color: black;
@@ -57,7 +53,6 @@ h2{
 h3 {
     font-weight: lighter;
 }
-
 .icon img{
     display: inline-block;
     width: autopx;
@@ -89,7 +84,6 @@ h3 {
     margin-inline: 10%;
     margin-top: 7.5%;
 }
-
 #work{
 
 }
@@ -105,7 +99,6 @@ h3 {
     justify-content: space-between;
     align-items: baseline;
 }
-
 .cvflex{
     display: flex;
     flex-direction:column;
@@ -114,15 +107,12 @@ h3 {
     margin-inline: 10%;
     margin-top: 7.5%;
 }
-
 .cvwrap{
     margin: 2.5%;
 }
 .cvtitle{
     border-top: 1px solid rgba(206, 206, 206, 0.882);
 }
-
-
 .cvcol1, li{
     margin: 20px 0;
     font-weight: lighter;
