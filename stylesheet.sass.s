@@ -1,3 +1,9 @@
+$primary-color: #ffffff;
+$secondary-color: #efefef;
+$tertiary-color: #00000000;
+
+
+
 body {
     background-color: #00000000;
 }
@@ -13,7 +19,7 @@ body {
     height: 7.5%;
     margin: 0;
     font-size: 1.2rem;
-    background-image: linear-gradient(#efefef, #ffffff, #efefef);
+    background-image: linear-gradient($secondary-color, $primary-color, $secondary-color);
     opacity: 0.9;
     border-bottom: 1px solid rgba(206, 206, 206, 0.882);
   }
@@ -35,15 +41,9 @@ body {
     display: block;
     color: #000000;
     text-align: right;
+    padding: 14px 16px;
     text-decoration: none;
   }
-.myname{
-    display: inline-block;
-    font-size: 2rem;
-    margin-left: 10%;
-    font-weight: lighter;
-    margin-top: 0.75%;
-}
 .navbar a:hover {
     background: #ffffff;
     color: black;
@@ -87,18 +87,16 @@ h3 {
     flex-wrap: wrap;
     background-color: #ffffff;
     margin-bottom: 5%;
- 
+    margin-inline: 10%;
     margin-top: 7.5%;
 }
+
 .projectdiv img{
     width: 29pc;
     height: 25pc;
     box-shadow: 0 5px 5px -5px #000500;
     filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
-}
-.projectdiv:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .CVcontainer {
     display: flex;
@@ -138,7 +136,9 @@ h3 {
 }
 .cvbio p{
     font-weight: lighter;
+
 }
+
 .cvtitle {
     border-top: 1px solid rgba(206, 206, 206, 0.882);
 }
@@ -153,6 +153,7 @@ h3 {
 
 #Contact {
     border-top: 1px solid rgba(206, 206, 206, 0.882);
+
 }
 .contactcontainer{
     display: flex;
@@ -214,7 +215,8 @@ h3 {
 
 @media screen and (max-width: 850px) {
     .workcontainer{
-        
+        margin-top: 20%;
+        width: 80%;
     }
 
         
