@@ -10,13 +10,17 @@ body {
     font-weight: lighter;
     top: 0; 
     width: 100%;
-    height: 7.5%;
-    margin: 0;
+    height: auto;
+    margin-right: 2%;
     font-size: 1.2rem;
     background-image: linear-gradient(#efefef, #ffffff, #efefef);
     opacity: 0.9;
     border-bottom: 1px solid rgba(206, 206, 206, 0.882);
   }
+.nav-link{
+    padding-inline: 1%;
+}
+
 .nameheader{
     background: hidden;
 }
@@ -42,12 +46,10 @@ body {
     font-size: 2rem;
     margin-left: 10%;
     font-weight: lighter;
-    margin-top: 0.75%;
 }
 .navbar a:hover {
     background: #ffffff;
     color: black;
-    opacity: 9;
 }
 h1 {
     font-size: 50pt;
@@ -55,13 +57,11 @@ h1 {
 h2{
     font-weight: lighter;
 }
-
 h3 {
     font-weight: lighter;
 }
 .icon img{
     display: inline-block;
-    width: autopx;
     height: 20px;
 }
 .widthdiv {
@@ -77,8 +77,7 @@ h3 {
 }
 
 .hero {
-    height: 100%;
-
+    height: 100vh;
 }
 .workcontainer {
     display: flex;
@@ -87,8 +86,8 @@ h3 {
     flex-wrap: wrap;
     background-color: #ffffff;
     margin-bottom: 5%;
- 
-    margin-top: 7.5%;
+    margin-top: 5%;
+    margin-inline: 2%;
 }
 .projectdiv img{
     width: 29pc;
@@ -100,122 +99,106 @@ h3 {
 .projectdiv:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.CVcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.cvflex{
+.cv-wrap{
+    background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
     display: flex;
     flex-direction:column;
+    justify-content:center;
     align-items: stretch;
     margin-bottom: 5%;
     margin-inline: 10%;
     margin-top: 7.5%;
 }
-.cvwrap{
-    margin: 2.5%;
+.cv-wrap h1{
+    padding-top: 5%;
+    padding-left: 5%;
 }
-.cvtitle{
-    border-top: 1px solid rgba(206, 206, 206, 0.882);
+.cv-wrap h2{
+    padding-left: 5%;
+    font-style: italic;
 }
-.cvcol1, li{
+.cv-wrap p{
+    padding-left: 5%;
+}
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin: 5%;
+}
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
-    font-weight: lighter;
+    font-size: 1em;
+    text-align: left;
 }
-
-.CVbio {
-    margin-top: 5%;
-    border-top: 1px solid rgba(206, 206, 206, 0.882);
-    border-bottom: 1px solid rgba(206, 206, 206, 0.882);
+.cv-table td {
+    border-width: 1px solid #ddd;
+    padding: 8px;
+    margin-inline: 5%;
+    font-style: italic;
 }
-.CVbio h1{
-    margin-bottom: 0%;
-}
-.CVbio h2{
-    font-size: 28pt;
+.cv-table th {
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 2.5%;
 }
-.cvbio p{
-    font-weight: lighter;
+.ed-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
 }
-.cvtitle {
-    border-top: 1px solid rgba(206, 206, 206, 0.882);
+.ed-table td {
+    border-width: 1px solid #ddd;
+    padding: 8px;
+    margin-inline: 5%;
+    font-style: italic;
 }
-.CVtitle h1{
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-top: 5%;
-}
-.CVdiv{
-    margin: 10%;
-}
-
-#Contact {
-    border-top: 1px solid rgba(206, 206, 206, 0.882);
+.ed-table th {
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2.5%;
 }
 .contactcontainer{
     display: flex;
     padding-top: 134.4px;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items:center ;
     padding: 50px;
+    overflow: hidden;
     background-image: linear-gradient(#ffffff, #ffffff, #00000024);
-
-
-}
-.contactfoot {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #ffffff;
-    font-weight: lighter;
-    font-size: 1.2rem;
-    background-image: linear-gradient(#000000, #484747, #000000);
-    opacity: 0.9;;
-    padding: 10%;
-
-}
-.contactfoot p {
-    margin: 0;
-    font-size: 50pt;
 }
 
-.cvcol1 ul{
-    padding-left: 2%;
-}
-
-.cvcol2 u3{
-    padding-left: 2%;
-}
-
-.cvcol3 ul{
-    padding-left: 2%;
-}
-
-.cvcol3 a{
-    color: #000000;
-}
-
-.cvcol3 a:hover {
-    background-image: linear-gradient(#efefef, #ffffff, #efefef);
-    color: black;
-    opacity: 9;
-}
-.cvsubtitle{
-    font-style: italic;
-}
-.cvsubtitle h2{
-    margin-top: 0.5%;
-}
-
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 400px) {
     .workcontainer{
-        
+
+    }
+}
+
+@media screen and (min-width: 1853px) {
+    .workcontainer{
+        margin-inline: 7.5%;
+        margin-top: 5%
     }
 
-        
+@media screen and (min-width: 3090px) {
+    .workcontainer{
+        margin-inline: 7.5%;
+        margin-top: 5%
+        }
+    }
+/*          
+@media screen and (max-width: 1100px) {
+    .navbar{
+        height: 5%;
+        }
+    }  */
+
 }
