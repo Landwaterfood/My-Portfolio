@@ -95,7 +95,7 @@ h3 {
 }
 .projectdiv img{
     width: 25pc;
-    height: auti;
+    height: auto;
     padding: 2%;
     box-shadow: 0 5px 5px -5px #000500;
     filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
