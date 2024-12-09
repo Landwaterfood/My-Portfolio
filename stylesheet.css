@@ -248,7 +248,7 @@ h3 {
     background-image: linear-gradient(#ffffff, #ffffff, #00000024);
 }
 
-/* @media screen and (min-width: 400px) {
+ /* @media screen and (min-width: 400px) {
     .workcontainer{
 
     }
@@ -266,8 +266,10 @@ h3 {
         margin-inline: 7.5%;
         margin-top: 5%
         }
-    }
+    } */
+
 @media screen and (max-height: 920px) {
+
     .projectdivlandscape{
         width: 70%;
         height: auto;
@@ -275,7 +277,11 @@ h3 {
     .projectdivlandscape img{
         width: 66%;
         height: auto;
-    .hero{
-        height: 100%
-    }
-}    */
+        }
+    .projectdiv{
+        width: 45%;
+        }
+    .squarediv {
+        width: 70%
+        }
+}    
