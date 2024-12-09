@@ -82,16 +82,21 @@ h3 {
 .workcontainer {
     display: flex;
     background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: #ffffff;
     margin-bottom: 5%;
     margin-top: 5%;
     margin-inline: 2%;
 }
-.projectdiv img{
+.projectdiv{
     width: 29pc;
-    height: 25pc;
+    height: auto;
+}
+.projectdiv img{
+    width: 25pc;
+    height: auti;
+    padding: 2%;
     box-shadow: 0 5px 5px -5px #000500;
     filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
