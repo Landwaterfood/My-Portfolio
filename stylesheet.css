@@ -75,12 +75,14 @@ h3 {
     font-weight: lighter;
     margin-top: 0.75%;
 }
-
+ 
 .hero {
-    height: 100vh;
+    height: 100%;
+    width: 100vw;
 }
 
 .landscape-container{
+    overflow: hidden;
     display: block;
     margin-left: auto;
     margin-right: auto;    
@@ -92,24 +94,25 @@ h3 {
     margin-inline: 2%;
 }
 .projectdivlandscape {
-    width: 90%;
+    width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .projectdivlandscape img{
-    width: 85%;
+    width: 75%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
     box-shadow: 0 5px 5px -5px #000500;
-    filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
+    filter: drop-shadow(16px 5% 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
 }
 .workcontainer {
+    overflow: hidden;
     display: flex;
     position: static;
     background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
@@ -122,26 +125,27 @@ h3 {
     margin-inline: 2%;
 }
 .projectdiv{
-    width: 42pc;
+    width: 42%;
     height: auto;
 }
 .projectdiv img{
-    width: 40pc;
+    width: 95%;
     height: auto;
     padding: 2%;
     box-shadow: 0 5px 5px -5px #000500;
-    filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
+    filter: drop-shadow(16px 5% 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
 }
 .projectdiv:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .squarecontainer {
+    overflow: hidden;
     display: block;
     position: static;
     align-items: center;
     background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     margin-top: 5%;
     margin-inline: 2%;
 }
@@ -149,14 +153,17 @@ h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 66%;
+    width: 55%;
     height: auto;
+}
+.squarediv:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .squarediv img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65pc;
+    width: 95%;
     height: auto;
     padding: 2%;
     box-shadow: 0 5px 5px -5px #000500;
@@ -241,7 +248,7 @@ h3 {
     background-image: linear-gradient(#ffffff, #ffffff, #00000024);
 }
 
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
     .workcontainer{
 
     }
@@ -252,6 +259,7 @@ h3 {
         margin-inline: 7.5%;
         margin-top: 5%
     }
+}
 
 @media screen and (min-width: 3090px) {
     .workcontainer{
@@ -259,11 +267,15 @@ h3 {
         margin-top: 5%
         }
     }
-/*          
-@media screen and (max-width: 1100px) {
-    .navbar{
-        height: 5%;
+@media screen and (max-height: 920px) {
+    .projectdivlandscape{
+        width: 70%;
+        height: auto;
         }
-    }  */
-
-}
+    .projectdivlandscape img{
+        width: 66%;
+        height: auto;
+    .hero{
+        height: 100%
+    }
+}    */
