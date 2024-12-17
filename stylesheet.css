@@ -173,6 +173,10 @@ h3 {
     filter: drop-shadow(16px 5% 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
 }
+.projectdivlandscape P {
+    font-weight: lighter;
+    font-style: italic;
+}
 .workcontainer {
     overflow: hidden;
     display: flex;
@@ -197,6 +201,10 @@ h3 {
     box-shadow: 0 5px 5px -5px #000500;
     filter: drop-shadow(16px 5% 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
+}
+.projectdiv P {
+    font-weight: lighter;
+    font-style: italic;
 }
 .projectdiv:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -231,6 +239,10 @@ h3 {
     box-shadow: 0 5px 5px -5px #000500;
     filter: drop-shadow(16px 5%px 20px rgb(0, 0, 0)) invert(10%);
     filter: grayscale(20%);
+}
+.squarediv P {
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .cv-wrap{
