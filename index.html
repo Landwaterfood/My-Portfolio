@@ -10,17 +10,29 @@
     <nav class="navbar">
         <div class = "myname">Chris Smith</div>
         <div class= "nav-wrapper">
-            <div class="nav-link"><a href="#art">Art</a></div>
+            <div class="nav-link dropdown"><a>Art</a>
+                <div class = "art-dropdown">
+                    <a href="#art">Paintings</a>
+                    <a href="#wop">Works on Paper</a>
+                    <a href="#time-based">Time-Based</a>
+                </div>
+            </div>
             <!-- <div class="nav-link"><a href="#land">Land</a></div>
             <div class="nav-link"><a href="#tech">Tech</a></div> -->
-            <div class="nav-link"><a href="#cv">CV</a></div>
+            <div class="nav-link dropdown"><a>CV</a>
+                <div class = "cv-dropdown">
+                        <a href="#cv">Education</a>
+                        <a href = "#artist-statement">Artist Statement</a>
+                </div>
+            </div>
+
             <div class="nav-link"><a href="#contact">Contact</a></div>
             <div class="icon nav-link"><a href ="https://www.linkedin.com/in/christopher-smith-696748153/"><img src="images/LI-In-Bug.png" alt ="Linkedin image"></a></div>
             <div class="icon nav-link"><a href ="https://github.com/Landwaterfood"><img src="images/github-mark.png" alt="github image"></a></div>
-            <div class="icon nav-link"><a href ="https://www.instagram.com/chrisdmsmith"><img src="images/instagram.png" alt="insta image"></a></div>
+            <div class="icon icon-right nav-link"><a href ="https://www.instagram.com/chrisdmsmith"><img src="images/instagram.png" alt="insta image"></a></div>
         </div>
     </nav> 
-    <section class="hero" id="art1">
+    <section class="hero" id="art">
         <div class="workcontainer">
             <div class="projectdiv">
                 <img src="images/elder-large.jpeg" alt="Elders for Katie I">
@@ -77,6 +89,13 @@
             </div>
         </div>
     </section>
+    <section class = "hero">
+        <div class="squarecontainer">
+            <div class="squarediv">
+                <img src="images/self-portrait-large.jpeg" alt="Self portrait">
+            </div>
+        </div>
+    </section>
 
     <section class="hero" id="art2">
         <div class="workcontainer">
@@ -86,11 +105,10 @@
             <div class="projectdiv">
                 <img src="images/statue-moor-garden-large.JPeG" alt="Statue in the garden">
             </div>
-            
         </div>
     </section>
 
-    <section class="hero">
+    <section class="hero" id = "wop">
         <div class="workcontainer">
             <div class="projectdiv">
                 <img src="images/wop-inkfarmer-large.jpeg" alt="Project image" onclick="onClick(this)">
@@ -123,18 +141,11 @@
         </div>
     </section>
     
-    <section class = "hero">
-        <div class="squarecontainer">
-            <div class="squarediv">
-                <img src="images/self-portrait-large.jpeg" alt="Self portrait">
-            </div>
-        </div>
-    </section>
       
-    <section class="hero" id="CV">
+    <section class="hero" id= "cv">
         <div class = "cv-wrap">
                     <h1>CV</h1>
-                    <h2>Land Arist, Painter, Grower</h2>
+                    <h2>Land Art, Painting, Growing</h2>
                     <!-- <p>Exploring depth of psyche, soul and Earth</p> -->
                 <div class="cv-container">
                     <table class="ed-table">
@@ -167,52 +178,71 @@
     <section class = "hero">
         <div class = "cv-wrap">
             <div class = "cv-container">
-                    <table class="cv-table">
+                <table class="cv-table">
                         <thead>               
                             <tr>
                                 <th>Experience</th>
                                 <th>Year</th>
-                                <th>Skills</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Horticulture Projects</td>
-                                <td>2010-2018</td>
-                                <td>Figma</td>
+                                <td>Totnes Foundation Exhibition</td>
+                                <td>June 2024</td>  
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>experience</td>
-                                <td>TouchDesigner</td>
+                                <td>Totnes Foundation Exhibition</td>
+                                <td>June 2023</td>  
                             </tr>
-                                <td>Farm Manager at Badminton Garden Farm</td>
+                            <tr>
+                                <td>Garden Artist in residence, Private Household, Liskeard </td>
+                                <td>2021-2022</td>
+                            </tr>
+                                <td>Garden Artist in residence, Badminton Estate, Cotswolds </td>
                                 <td>2019-2021</td>
-                                <td>PHP</td>
                             <tr>
-                                <td>Landscape & Spatial Design Company</td>  
+                                <td>Director, Landscape & Spatial Design Company</td>  
                                 <td>2015-2019</td>
-                                <td>HTML & CSS</td>
                             </tr>
                             <tr>
-                                <td>Exhibition</td>
-                                <td></td>  
-                                <td>JavaScript</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>  
-                                <td>Python</td>
+                                <td>Chef de Partie</td>
+                                <td>2010-2018</td>
                             </tr>
                         </tbody>
-                    </table>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class = "hero" id="artist-statement">
+        <div class = "statement-wrap">
+            <div class = "statement-container">
+                <div>
+                    <h2>Artiist Statement</h2>
+                </div>
+                <div class = "artist-statement">
+                    <p>
+                        The immanent and the transcendent, the absolute and the personal. My practice resides within the liminal, at the threshold of knowing. Here, where boundaries dissolve and opposites intertwine, I explore the interplay between inner truth, the outer world and universal mystery. Through the lenses of Posthumanism, Decolonial Feminism and Animism, I engage in pilgrimage, wilderness vigil and rites of passage. This process coaleses in the studio with rigorous observation with automatic intuition, culminating in gestural mark-making that seeks to capture a fleeting eternity. I strive for likeness that transcends representation, expressed through paintings, works on paper and artist film.            
+                    </p>
+                 
+                </div>
+                <div class = "artist-statement">
+                    <p>Hands in the Ground,</p>
+                    <p>Grief is weary amongst little deaths.</p>
+                    <p>Ice age,</p>
+                    <p>Tidal wave,</p>
+                    <p>Another Storm</p>
+                    <p>Another Bomb</p>
+                    <p></p>
+                    <p>The great compost heap turns,</p>
+                    <p>To Ash,</p>
+                    <p>Another cycle.</p>
+                    <p>Creation yearns anew</p>
                 </div>
             </div>
         </div>
-        </div>
-    </div>
+
     </section>
-    <section class="hero" id="Contact">
+    <section class="hero" id="contact">
         <div class="contactcontainer">
             <h1>Contact</h1>
             <div>

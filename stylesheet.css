@@ -19,6 +19,7 @@ body {
   }
 .nav-link{
     padding-inline: 1%;
+    position: relative
 }
 
 .nameheader{
@@ -30,6 +31,7 @@ body {
     position: fixed;
     width: 100%;
     margin-top: 0.5%;
+    margin-right: 5%;
     font-size: 2rem;
     opacity: 0.9;
     }
@@ -48,17 +50,76 @@ body {
     font-weight: lighter;
 }
 .navbar a:hover {
-    background: #ffffff;
-    color: black;
+    background-image: linear-gradient(#efefef, #ffffff, #efefef);
+    color: #000000;
+}
+
+.art-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it below the parent link */
+    left: 0;
+    background-color: #f6f6f6;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.art-dropdown a {
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.art-dropdown a:hover {
+    background-color: #ececec;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .art-dropdown {
+    display: block;
+    color: #000000;
+}
+.cv-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it below the parent link */
+    left: 0;
+    background-color: #f6f6f6;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.cv-dropdown a {
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.cv-dropdown a:hover {
+    background-color: #ececec;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .cv-dropdown {
+    display: block;
+    color: #000000;
 }
 h1 {
     font-size: 50pt;
+    font-weight: lighter;
+
 }
 h2{
     font-weight: lighter;
 }
 h3 {
     font-weight: lighter;
+}
+.icon-right {
+    margin-right: 5%;
 }
 .icon img{
     display: inline-block;
@@ -213,6 +274,7 @@ h3 {
     font-style: italic;
 }
 .cv-table th {
+    font-weight: lighter;
     font-size: 1.2em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 2.5%;
@@ -231,6 +293,7 @@ h3 {
     font-style: italic;
 }
 .ed-table th {
+    font-weight: lighter;
     font-size: 1.2em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 2.5%;
@@ -246,6 +309,29 @@ h3 {
     padding: 50px;
     overflow: hidden;
     background-image: linear-gradient(#ffffff, #ffffff, #00000024);
+}
+.statement-wrap{
+    background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: stretch;
+    margin-bottom: 5%;
+    margin-inline: 10%;
+    margin-top: 7.5%;
+
+}
+.statement-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+}
+.artist-statement{
+    padding: 5% 10%;
+}
+.artist-statement p{
+    text-align: center;
 }
 
  /* @media screen and (min-width: 400px) {
