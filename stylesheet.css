@@ -94,7 +94,7 @@ h3 {
     margin-inline: 2%;
 }
 .projectdivlandscape {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -271,11 +271,11 @@ h3 {
 @media screen and (max-height: 920px) {
 
     .projectdivlandscape{
-        width: 70%;
+        width: 90%;
         height: auto;
         }
     .projectdivlandscape img{
-        width: 66%;
+        width: 80%;
         height: auto;
         }
     .projectdiv{
