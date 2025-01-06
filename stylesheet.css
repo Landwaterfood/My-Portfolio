@@ -155,10 +155,12 @@ h3 {
 
 }
 .projectdivlandscape {
+    padding-top: 5%;
     width: 90%;
     height: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
@@ -174,8 +176,10 @@ h3 {
     filter: grayscale(20%);
 }
 .projectdivlandscape P {
+    justify-content: center;
     font-weight: lighter;
     font-style: italic;
+    padding-left: 10%;
 }
 .workcontainer {
     overflow: hidden;
