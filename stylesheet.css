@@ -4,7 +4,6 @@ body {
 
 .navbar {
     display: flex;
-    overflow: hidden;
     position: fixed;
     z-index: 9999;
     font-weight: lighter;
@@ -12,7 +11,6 @@ body {
     width: 100%;
     height: auto;
     margin-right: 2%;
-    font-size: 1.2rem;
     background-image: linear-gradient(#efefef, #ffffff, #efefef);
     opacity: 0.9;
     border-bottom: 1px solid rgba(206, 206, 206, 0.882);
@@ -106,7 +104,6 @@ body {
 h1 {
     font-size: 50pt;
     font-weight: lighter;
-
 }
 h2{
     font-weight: lighter;
@@ -133,9 +130,11 @@ h3 {
     margin-top: 0.75%;
 }
  
-.hero {
-    height: 100%;
-    width: 100vw;
+.poem-intro {
+    font-family: inherit;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10%;
 }
 
 .container{
@@ -157,9 +156,7 @@ h3 {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 5px 5px -5px #000500;
-    filter: drop-shadow(16px 5% 20px rgb(0, 0, 0.1)) invert(10%);
-    filter: grayscale(20%);
+
 }
 .image-div img{
     width: 85vw;
@@ -180,10 +177,14 @@ h3 {
     font-style: italic;
     margin-bottom: 0;
 }
-.image-div:hover {
+.p-div:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.p-div {
+    box-shadow: 0 5px 5px -5px #000500;
+    filter: drop-shadow(16px 5% 20px rgb(0, 0, 0.1)) invert(10%);
+    filter: grayscale(20%);
+}
 .cv-wrap{
     background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
     display: flex;
@@ -211,25 +212,6 @@ h3 {
     justify-content: center;
     align-items: baseline;
     margin: 5%;
-}
-.cv-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 1em;
-    text-align: left;
-}
-.cv-table td {
-    border-width: 1px solid #ddd;
-    padding: 8px;
-    margin-inline: 5%;
-    font-style: italic;
-}
-.cv-table th {
-    font-weight: lighter;
-    font-size: 1.2em;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 2.5%;
 }
 .ed-table {
     width: 100%;
@@ -282,31 +264,7 @@ h3 {
 .artist-statement{
     padding: 5% 10%;
 }
-.artist-statement p{
-    text-align: center;
-}
-
- /* @media screen and (min-width: 400px) {
-    .workcontainer{
-
-    }
-}
-
-@media screen and (min-width: 1853px) {
-    .workcontainer{
-        margin-inline: 7.5%;
-        margin-top: 5%
-    }
-}
-
-@media screen and (min-width: 3090px) {
-    .workcontainer{
-        margin-inline: 7.5%;
-        margin-top: 5%
-        }
-    } */
-
-@media screen and (max-height: 720px) and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .image-div{
         width: 90%;
@@ -316,18 +274,14 @@ h3 {
         width: 80%;
         height: auto;
         }
-    .projectdiv{
-        width: 45%;
-        }
-    .squarediv {
-        width: 70%
-        }
-    .navbar a {
-        font-size: 1rem; 
-        }
+
     .myname {
         font-size: 1.1rem;
     }
+    .nav-wrapper {
+        font-size: 1rem; 
+    }
+
 
 }    
 
