@@ -180,11 +180,7 @@ h3 {
 .p-div:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.p-div {
-    box-shadow: 0 5px 5px -5px #000500;
-    filter: drop-shadow(16px 5% 20px rgb(0, 0, 0.1)) invert(10%);
-    filter: grayscale(20%);
-}
+
 .cv-wrap{
     background-image: linear-gradient(#e8e8e80f, #a0a0a032, #e8e8e803);
     display: flex;
